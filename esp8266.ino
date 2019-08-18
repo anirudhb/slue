@@ -51,7 +51,6 @@ void loop() {
 
     Serial.print("MOISTURE LEVEL : ");
     moisture_value= analogRead(moisture_Pin);
-    moisture_value= moisture_value / 1024;
     Serial.println(moisture_value);
    if(moisture_value < 512) moisture_state = 0;
    else moisture_state = 1;
